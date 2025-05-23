@@ -1,0 +1,102 @@
+
+==============================
+Forêt : Monts Kouffe 
+==============================
+ARIMA buffer : 
+Series: ts_buffer 
+ARIMA(1,0,0)(0,1,1)[12] with drift 
+
+Coefficients:
+          ar1     sma1    drift
+      -0.2436  -0.5960  -0.1852
+s.e.   0.0590   0.0431   0.0971
+
+sigma^2 = 3186:  log likelihood = -1533.22
+AIC=3074.44   AICc=3074.58   BIC=3088.99
+
+Training set error measures:
+                    ME     RMSE      MAE MPE MAPE     MASE       ACF1
+Training set 0.4162171 54.98025 24.58784 NaN  Inf 1.053205 -0.0191605
+ARIMA core : 
+Series: ts_core 
+ARIMA(0,0,1)(0,1,1)[12] 
+
+Coefficients:
+          ma1     sma1
+      -0.2945  -0.6409
+s.e.   0.0604   0.0489
+
+sigma^2 = 15708:  log likelihood = -1758.44
+AIC=3522.88   AICc=3522.97   BIC=3533.79
+
+Training set error measures:
+                    ME     RMSE      MAE MPE MAPE      MASE       ACF1
+Training set -4.216092 122.3016 47.88917 NaN  Inf 0.8996725 0.01362149
+
+==============================
+Forêt : Wari-Maro 
+==============================
+ARIMA buffer : 
+Series: ts_buffer 
+ARIMA(1,0,1)(2,1,1)[12] with drift 
+
+Coefficients:
+         ar1      ma1     sar1     sar2     sma1    drift
+      0.1526  -0.4409  -0.1168  -0.2621  -0.3348  -0.1744
+s.e.  0.2376   0.2162   0.1147   0.0756   0.1054   0.0734
+
+sigma^2 = 1995:  log likelihood = -1465.73
+AIC=2945.46   AICc=2945.87   BIC=2970.93
+
+Training set error measures:
+                   ME     RMSE      MAE MPE MAPE     MASE          ACF1
+Training set 0.724445 43.27219 19.51795 NaN  Inf 1.086616 -0.0009402112
+ARIMA core : 
+Series: ts_core 
+ARIMA(2,0,1)(0,1,2)[12] with drift 
+
+Coefficients:
+         ar1     ar2      ma1     sma1    sma2    drift
+      0.3986  0.0534  -0.6166  -0.5580  0.0374  -0.1561
+s.e.  0.5067  0.1453   0.5002   0.0986  0.0936   0.0845
+
+sigma^2 = 2364:  log likelihood = -1489.19
+AIC=2992.37   AICc=2992.78   BIC=3017.84
+
+Training set error measures:
+                   ME     RMSE      MAE MPE MAPE      MASE          ACF1
+Training set 1.033504 47.10042 18.27357 NaN  Inf 0.9917772 -0.0003620033
+
+==============================
+Forêt : Ouémé Supérieur 
+==============================
+ARIMA buffer : 
+Series: ts_buffer 
+ARIMA(2,0,2)(1,1,0)[12] with drift 
+
+Coefficients:
+          ar1      ar2      ma1     ma2     sar1    drift
+      -0.0288  -0.0017  -0.2205  0.0240  -0.2041  -0.0816
+s.e.  10.9892   1.4718  10.9879  1.3171   0.0598   0.1172
+
+sigma^2 = 1330:  log likelihood = -1406.57
+AIC=2827.14   AICc=2827.55   BIC=2852.61
+
+Training set error measures:
+                    ME     RMSE      MAE MPE MAPE     MASE        ACF1
+Training set 0.1171976 35.32963 10.13776 NaN  Inf 1.051714 0.000397595
+ARIMA core : 
+Series: ts_core 
+ARIMA(2,0,0)(0,1,1)[12] with drift 
+
+Coefficients:
+          ar1      ar2     sma1    drift
+      -0.1058  -0.0490  -0.3226  -0.2487
+s.e.   0.0598   0.0617   0.0585   0.1943
+
+sigma^2 = 4303:  log likelihood = -1572.94
+AIC=3155.88   AICc=3156.09   BIC=3174.07
+
+Training set error measures:
+                    ME     RMSE      MAE MPE MAPE     MASE          ACF1
+Training set 0.4557662 63.77907 22.81213 NaN  Inf 1.059959 -0.0008450429
