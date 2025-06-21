@@ -7,19 +7,20 @@ forest zones: Monts Kouffe, Wari-Maro, and Ouémé Supérieur in Benin.
 ## Project Structure
 
 - **datasets/**  
-  Contains the dataset `Burned_Area_By_Zone_Core_Buffer.csv` with historical 
-  burned area data for each forest zone. This dataset was collected the MODIS 
-  MCD64A1 product with Google Earth Engine.
+  Contains the dataset `fire_data_200625.csv` with historical 
+  burned area data and relevant information for each forest zone. This dataset was collected from the MODIS 
+  MOD14A1.061 product with Google Earth Engine (GEE). The project repository can be accessed 
+  [here](https://code.earthengine.google.com/?accept_repo=users/gandahostanmah/fire_analysis_carlos)
 
 - **scripts/**  
   - `setup.R`: Installs and loads required R packages.  
-  - `01_get_modis_collection.js`: Get burned area data from the MODIS MCD64A1 
-  product with Google Earth Engine. This code must be executed in GEE. 
-  - `02_forecasting.R`: Performs ARIMA modeling and forecasting for each forest 
-  zone and generates plots.
+  - `01_process_gee_output.R`: Process raw data output from GEE.
+  - `02_active_fire_detection_distribution.R`: Plot fire detection trend over years per forest zone.
+  - `03_forecasting.R`: Performs ARIMA modeling and forecasting for each forest 
+  - `utils.R`: Util functions
 
 - **plots/**  
-  Stores forecast plots for each forest zone.
+  Stores plots.
 
 - **ARIMA.txt**  
   Contains ARIMA model summaries for each forest zone.
@@ -27,9 +28,5 @@ forest zones: Monts Kouffe, Wari-Maro, and Ouémé Supérieur in Benin.
 ## Usage
 
 1. Clone the repository and open the project in RStudio.
-2. Run `scripts/setup.R` to install and load required packages.
-3. Execute `scripts/02_forecasting.R` to:
-   - Load the dataset.
-   - Apply ARIMA models to each forest zone.
-   - Generate forecasts and save plots in the `plots/` directory.
-   - Save ARIMA model summaries in `ARIMA.txt`.
+2. Run `setup.R` to install and load required packages.
+3. Execute the scripts in order.
